@@ -1,0 +1,23 @@
+---
+const { name, size = 20 } = Astro.props;
+const paths = {
+  arrow: 'M4 12h15m-6-6 6 6-6 6',
+  next: 'm9 5 7 7-7 7',
+  prev: 'm15 5-7 7 7 7',
+  external: 'M6 18 18 6M8 6h10v10',
+  pin: 'M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0ZM15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z',
+  whatsapp: 'M20.4 3.6A11 11 0 0 0 3.2 17L2 22l5.1-1.3a11 11 0 0 0 13.3-17.1Z M8.5 7.3c-.6-.2-1.6.5-1.6 2 0 2.5 3.6 6.4 6.5 7 1.5.3 3.3-.2 3.5-1.6l.1-.7-3-1.5-.9 1.1c-.2.3-.5.2-.8 0-1.2-.7-2.1-1.5-2.8-2.8-.2-.3-.2-.5 0-.7l.6-.8-.9-2Z',
+  menu: 'M4 7h16M4 12h16M4 17h16',
+  close: 'm6 6 12 12M18 6 6 18',
+  plus: 'M12 5v14M5 12h14',
+  check: 'm5 12 4 4L19 6',
+  camera: 'M3 6h4l2-2h6l2 2h4v14H3z M16 12.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z',
+  rings: 'M14 14a5 5 0 1 1-10 0 5 5 0 0 1 10 0ZM20 14a5 5 0 1 1-10 0 5 5 0 0 1 10 0ZM8 5l1-2 1 2m4 0 1-2 1 2',
+  heart: 'M20.8 8.6c0 4.8-8.8 10.4-8.8 10.4S3.2 13.4 3.2 8.6A4.6 4.6 0 0 1 12 6.7a4.6 4.6 0 0 1 8.8 1.9Z',
+  flowers: 'M12 9c-3-2-4 1-2 2-3 2 0 4 2 2 2 2 5 0 2-2 2-1 1-4-2-2Zm0 4v8m0-3c-2-3-5-3-6-3 0 3 3 4 6 4m0-1c2-3 5-3 6-3 0 3-3 4-6 4M5 5v4M3 7h4m12-5v4m-2-2h4',
+  people: 'M15 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2m18 0v-2a4 4 0 0 0-3-3.9M12 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm4-3a3 3 0 0 1 0 6',
+};
+---
+<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <path d={paths[name]} />
+</svg>

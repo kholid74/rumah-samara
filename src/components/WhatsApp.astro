@@ -1,0 +1,9 @@
+---
+import Icon from './Icon.astro';
+import { messages, whatsappUrl } from '../lib/booking.mjs';
+
+const { topic = 'date', label, class: className, id } = Astro.props;
+---
+<a id={id} class:list={['button', className]} href={whatsappUrl(messages[topic])} target="_blank" rel="noopener noreferrer">
+  <Icon name="whatsapp" size={19} /><span>{label}</span>
+</a>
