@@ -15,10 +15,6 @@ import driveway from '../../SAMARA_M0_v1.2_Corrected_Assets/web_zip_14/Bright Mo
 import ceremony from '../../SAMARA_M0_v1.2_Corrected_Assets/web_zip_14/Vine-Covered Garden Ceremony Seating.webp';
 import floralStage from '../../SAMARA_M0_v1.2_Corrected_Assets/web_zip_14/Elegant Pink Marble Wedding Stage with Flowers.webp';
 import collage from '../../SAMARA_M0_v1.2_Corrected_Assets/web_zip_14/Elegant Garden Wedding Venue Collage.webp';
-import originalGarden from '../../SAMARA_M0_v1.2_Corrected_Assets/web_earlier_8/1000311401.webp';
-import originalCorridor from '../../SAMARA_M0_v1.2_Corrected_Assets/web_earlier_8/1000311402.webp';
-import originalDriveway from '../../SAMARA_M0_v1.2_Corrected_Assets/web_earlier_8/1000311403.webp';
-import originalExterior from '../../SAMARA_M0_v1.2_Corrected_Assets/web_earlier_8/1000311404.webp';
 import '../styles/site.css';
 
 const title = 'SAMARA | Sewa Tempat Hajatan & Acara Keluarga di Cibogo, Cianjur';
@@ -49,10 +45,6 @@ const photos = [
   { image: ceremony, group: 'dekorasi', label: decorationLabel, caption: 'Kursi kayu di bawah tanaman rambat', alt: 'Kursi kayu berjajar di taman dengan tanaman rambat di atasnya' },
   { image: floralStage, group: 'dekorasi', label: decorationLabel, caption: 'Pelaminan dengan rangkaian bunga', alt: 'Rangkaian bunga warna-warni dengan latar merah muda dan kursi berbingkai emas' },
   { image: collage, group: 'dekorasi', label: decorationLabel, caption: 'Kolase penataan acara', alt: 'Kolase dekorasi bunga, susunan kursi di taman, dan penataan teras' },
-  { image: originalGarden, group: 'venue', label: venueLabel, caption: 'Halaman sebelum ditata', alt: 'Halaman belakang dengan teras, ubin berpola, dan tanaman' },
-  { image: originalCorridor, group: 'akses', label: venueLabel, caption: 'Lorong samping', alt: 'Lorong berubin yang menghubungkan bagian depan dan halaman belakang' },
-  { image: originalDriveway, group: 'akses', label: venueLabel, caption: 'Halaman depan dan teras', alt: 'Halaman depan berubin dengan teras rumah di ujungnya' },
-  { image: originalExterior, group: 'akses', label: venueLabel, caption: 'Tampak luar dari sisi gerbang', alt: 'Fasad rumah dan pilar gerbang dilihat dari luar' },
 ];
 const filters = [['semua', 'Semua Foto'], ['acara', 'Penataan Acara'], ['venue', 'Area Venue'], ['akses', 'Akses & Fasilitas'], ['dekorasi', 'Dekorasi Acara']];
 const events = [['rings', 'Akad Nikah'], ['heart', 'Lamaran'], ['flowers', 'Syukuran Pernikahan'], ['people', 'Acara Keluarga']];
@@ -62,7 +54,7 @@ const faqs = [
   ['Apakah kursi, tenda, dan dekorasi sudah termasuk?', 'Belum. Kursi, tenda, dekorasi, dan katering disiapkan bersama vendor pilihan Anda.'],
   ['Apakah waktu pemasangan dekorasi dihitung dalam 7–8 jam?', 'Waktu pemasangan dan pembongkaran dekorasi berada di luar durasi acara. Jadwal akses vendor disepakati terpisah.'],
   ['Bagaimana cara booking?', 'Tanggal dikunci dengan DP dan pelunasan dilakukan H-1 acara. Hubungi SAMARA untuk membicarakan ketentuan pemesanan.'],
-  ['Berapa kapasitas tamu?', 'SAMARA pernah digunakan untuk acara dengan sekitar 100 tamu hadir bersamaan. Jumlah tamu yang sesuai perlu dikonfirmasi berdasarkan tata letak dan keamanan.'],
+  ['Berapa kapasitas tamu?', 'SAMARA dapat menampung 150 tamu. Konfirmasikan jumlah akhir sesuai tata letak acara.'],
   ['Bagaimana pengaturan parkir?', 'Pengaturan parkir dikoordinasikan dengan warga atau pengurus kompleks. Sampaikan kebutuhan parkir saat menjadwalkan survei.'],
 ];
 ---
@@ -81,7 +73,7 @@ const faqs = [
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     {canonical && <meta property="og:url" content={canonical} />}
-    <meta property="og:image" content={canonical ? new URL('/samara-og.jpg', canonical) : '/samara-og.jpg'} />
+    <meta property="og:image" content={canonical ? new URL('/samara-fasad-og.jpg', canonical) : '/samara-fasad-og.jpg'} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Foto tampak depan SAMARA di Cibogo, Cianjur" />
@@ -134,8 +126,8 @@ const faqs = [
         <dl class="wrap facts-grid">
           <div><dt>Sewa tempat</dt><dd>Rp2,5 juta</dd></div>
           <div><dt>Durasi acara</dt><dd>7–8 jam</dd></div>
-          <div><dt>Pernah hadir bersamaan</dt><dd>±100 tamu</dd><dd class="fact-note">Kapasitas perlu dikonfirmasi sesuai penataan.</dd></div>
-          <div><dt>Luas keseluruhan properti</dt><dd>250 m²</dd></div>
+          <div><dt>Jumlah tamu</dt><dd>150 orang</dd><dd class="fact-note">Jumlah akhir dikonfirmasi sesuai penataan.</dd></div>
+          <div><dt>Luas keseluruhan properti</dt><dd>480 m²</dd></div>
         </dl>
       </section>
 

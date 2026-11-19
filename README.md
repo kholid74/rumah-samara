@@ -18,9 +18,9 @@ Hasil build ada di `dist/`. Semua CTA menggunakan nomor resmi 0813-2217-2075. Fo
 
 ## Aset v1.2
 
-Paket `SAMARA_M0_v1.2_Corrected_Assets/` menyimpan 14 file ZIP terbaru dan 8 foto pendamping dalam format master. Situs mengimpor WebP dari `web_zip_14/` dan `web_earlier_8/` langsung. Astro membuat varian `srcset` dengan rasio sumber. Pemotongan bingkai terjadi lewat CSS, dan lightbox membuka WebP utuh.
+Paket `SAMARA_M0_v1.2_Corrected_Assets/` menyimpan 14 file ZIP terbaru dan 8 foto pendamping dalam format master. Situs mengimpor WebP dari `web_zip_14/`. Astro membuat varian `srcset` dengan rasio sumber. Pemotongan bingkai terjadi lewat CSS, dan lightbox membuka WebP utuh.
 
-Hero desktop dan ponsel memakai `Vine-Covered Garden Event Seating.webp`. Galeri memuat ke-13 WebP dari ZIP terbaru dan 4 foto pendamping area venue. Pilihan **Semua Foto** menampilkan 17 foto di grid. Foto yang menampilkan orang, foto ruang keluarga, dan poster lama tersimpan di paket aset. Header dan favicon menggunakan turunan dari logo resmi dalam folder `branding/`. Open Graph memakai foto fasad asli `1000311404.jpg` dengan logo.
+Hero desktop dan ponsel memakai `Vine-Covered Garden Event Seating.webp`. Pilihan **Semua Foto** menampilkan ke-13 WebP dari ZIP terbaru. Foto pendamping, foto ruang keluarga, dan poster lama tersimpan di paket aset. Header dan favicon menggunakan turunan dari logo resmi dalam folder `branding/`. Open Graph memakai `Bright White House with Golden Trim.webp` dengan logo.
 
 ## Pengaturan publikasi
 
